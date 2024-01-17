@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <title>calendrier</title>
+
+</head>
+
+<body>
+    <div id="main-wrapper" class="show">
+        <app-headbar></app-headbar>
+        <app-menu></app-menu>
+
+
+        <!-- start section content -->
+        <div class="content-body">
+            <div class="warper container-fluid">
+                <div class="new_appointment main_container">
+                    <div class="row page-titles mx-0">
+                        <div class="col-sm-6 p-md-0">
+                            <div class="welcome-text">
+                                <h4 class="text-primary">Calendrier</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <div class="row">
+
+                                        <!-- start draggable events -->
+                                        <div class="col-lg-3">
+                                            <div class="draggable-events">
+                                                <h4 class="box-title">Événements</h4>
+                                                <div class="box-body bottom-event">
+                                                    <!-- the events -->
+                                                    <div id="external-events" class="external-events">
+                                                        <div class="external-event bg-calander-1 btn">Mon Calendrier</div>
+                                                        <div class="external-event bg-calander-2 btn">Clinique</div>
+                                                        <div class="external-event bg-calander-3 btn">Famille</div>
+                                                        <div class="external-event bg-calander-4 btn">cammarades</div>
+                                                        <div class="external-event bg-calander-5 btn">Vaccances</div>
+                                                        <div class="external-event bg-calander-6 btn">Anniversaires</div>
+                                                        <div class="external-event bg-calander-7 btn">Voyage</div>
+                                                        <div class="external-event bg-calander-8 btn">Jours fériés</div>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="create-event">
+                                                <div class="event-header">
+                                                    <h3 class="box-title">Creation Événement</h3>
+                                                </div>
+                                                <div class="event-body">
+                                                    <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
+                                                        <ul class="fc-color-picker" id="color-chooser">
+                                                            <li>
+                                                                <a class="text-aqua" href="#">
+                                                                    <i class="fa fa-square"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="text-blue" href="#">
+                                                                    <i class="fa fa-square"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="text-light-blue" href="#">
+                                                                    <i class="fa fa-square"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="text-teal" href="#">
+                                                                    <i class="fa fa-square"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="text-yellow" href="#">
+                                                                    <i class="fa fa-square"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="text-orange" href="#">
+                                                                    <i class="fa fa-square"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="text-green" href="#">
+                                                                    <i class="fa fa-square"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="text-lime" href="#">
+                                                                    <i class="fa fa-square"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="input-group add-event">
+                                                        <input id="new-event" type="text" class="form-control" placeholder="Événement">
+                                                        <div class="input-group-btn">
+                                                            <button id="add-new-event" type="button" class="btn btn-primary btn-flat" (click)="ajouter()">Ajouter</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- start draggable events -->
+
+
+                                        <!-- The Calendar -->
+                                        <div class="col-lg-9 m-t-2">
+                                            <div class="col-bor box box-primary">
+                                                <div class="box-body no-padding">
+                                                    <div id="calendar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End The Calendar -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End section content -->
+
+
+        <!-- start section footer -->
+        <div class="footer">
+            <div class="copyright">
+                <p class="mb-0">Copyright © Designed &amp; Developed by <a href="#" target="_blank">Feriel&Oumaima</a> 2022-2023
+                </p>
+            </div>
+        </div>
+        <!-- End section footer -->
+
+
+    </div>
+
+
+
+
+</body>
+
+
+</html>

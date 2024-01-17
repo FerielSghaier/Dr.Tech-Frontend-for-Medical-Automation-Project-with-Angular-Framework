@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+   
+    <title>Ajouter Patient</title>
+  
+</head>
+
+<body>
+    <div id="main-wrapper" class="show">
+
+
+        <app-headbar></app-headbar>
+        <app-menu></app-menu>
+
+        <!-- start section content -->
+        <div class="content-body">
+            <div class="warper container-fluid">
+                <div class="new-patients main_container">
+                    <div class="row page-titles mx-0">
+                        <div class="col-sm-6 p-md-0">
+                            <div class="welcome-text">
+                                <h4 class="text-primary">Nouveau Patient</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a routerLink="/tableau">Acceuil</a></li>
+                                <li class="breadcrumb-item active"><a routerLink="/ajouter-patient">Nouveau Patient</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Informations Personnelles</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="basic-form">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-xl-4">
+                                                    <div class="form-group row widget-3">
+                                                        <div class="col-lg-10">
+                                                            <div class="form-input">
+                                                                <label class="labeltest" for="file-ip-1">
+                                                                    <span> Déposez l'image ici ou cliquez pour télécharger. </span>
+                                                                </label>
+                                                                <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+                                                                <div class="preview">
+                                                                    <img id="file-ip-1-preview" src="#" alt="img">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Nom">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Prénom">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" placeholder="Email">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Numéro de téléphone">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" placeholder="Date de naissance">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <select class="form-control form-select">
+                                                            <option> Statut social </option>
+                                                            <option>Marrié</option>
+                                                            <option>Célibataire</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <select class="form-control form-select">
+                                                            <option>Sexe</option>
+                                                            <option>Femme</option>
+                                                            <option>Homme</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <select class="form-control form-select">
+                                                            <option>Groupe Sanguin</option>
+                                                            <option>A+</option>
+                                                            <option>A-</option>
+                                                            <option>B+</option>
+                                                            <option>B-</option>
+                                                            <option>O+</option>
+                                                            <option>O-</option>
+                                                            <option>AB+</option>
+                                                            <option>AB-</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row">
+                                                
+                                                <div class="col-xl-4">
+                                                    <div class="form-group">
+                                                        <select class="form-control form-select">
+                                                            <option> Couverture Sociale </option>
+                                                            <option>CNAM-filière publique</option>
+                                                            <option>CNAM-filière privée</option>
+                                                            <option>CNAM-filière “remboursement”</option>
+                                                            <option>CNSS</option>
+                                                            <option>CNRPS</option>
+                                                            <option>Pyant</option>
+                                                            <option>Gratuité légale</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-12">
+                                                            <input type="text" class="form-control" placeholder="Poids">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <div class="form-group row">
+                                                        <div class="col-lg-12">
+                                                            <input type="text" class="form-control" placeholder="taille">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-4">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" placeholder="Addresse" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-8">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" placeholder="Remarques " rows="4"></textarea>
+                                                    </div>
+                                                    <div class="form-group text-right">
+                                                        <button type="submit" class="btn btn-primary float-end" (click)="ajouter1()">Enregistrer</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Antécedants</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="basic-form">
+                                        <form>
+                                            <div class="row">
+                                                <label class="form-label">Antécedants Personnelles</label>
+                                                <div class="col-xl-4">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" placeholder="Antécedants Médicaux" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" placeholder="Antécedants Chirurgicaux" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+                                                <label class="form-label">Antécedants Familiaux</label>
+                                                <div class="col-xl-4">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" placeholder="Antécedants Familiaux" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group text-right">
+                                                <button type="submit" class="btn btn-primary float-end " (click)="ajouter2()">Enregistrer</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End section content -->
+
+
+        <!-- start section footer -->
+        <div class="footer">
+            <div class="copyright">
+                <p class="mb-0">Copyright © Designed &amp; Developed by <a href="#" target="_blank">Feriel&Oumaima</a> 2022-2023
+                </p>
+            </div>
+        </div>
+        <!-- End section footer -->
+
+
+    </div>
+
+
+    
+
+</body>
+
+
+</html>

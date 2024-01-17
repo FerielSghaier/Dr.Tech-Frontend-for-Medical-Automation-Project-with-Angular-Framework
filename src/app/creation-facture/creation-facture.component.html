@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <title>Facture</title>
+ 
+</head>
+
+<body>
+    <div id="main-wrapper" class="show">
+
+
+        <app-headbar></app-headbar>
+        <app-menu></app-menu>
+
+
+        <!-- start section content -->
+        <div class="content-body ">
+            <div class="warper container-fluid">
+                <div class="create_invoice main_container">
+                    <div class="row page-titles mx-0">
+                        <div class="col-sm-6 p-md-0">
+                            <div class="welcome-text">
+                                <h4 class="text-primary">Creation Facture</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a routerLink="/tableau">Acceuil</a></li>
+                                <li class="breadcrumb-item active"><a routerLink="/creation-facture">créer facture</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card shadow mb-4">
+                                <div class="card-header">
+                                    <h4 class="card-title"> Creation Facture </h4>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-lg-4 col-sm-6">
+                                                <div class="form-group">
+                                                    <select class="form-control form-select">
+                                                        <option>Patient...</option>
+                                                    
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6">
+                                                <div class="form-group">
+                                                    <select class="form-control form-select">
+                                                        <option>mode de paiement</option>
+                                                        <option>Cash</option>
+                                                        <option>Cheque</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <select class="form-control form-select">
+                                                        <option>Status de paiement </option>
+                                                        <option>payé</option>
+                                                        <option>non payé</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-lg-4 col-sm-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Invoice Title">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 ">
+                                                <div class="form-group">
+                                                    <div class="input-group ">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text" id="basic-addon1">dinar</span>
+                                                        </div>
+                                                        <input type="text" class="form-control" placeholder="Montant">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <button type="button" class="btn btn-primary w-100 h-56" (click)="creer()">Créer Facture</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End section content -->
+
+
+        <!-- start section footer -->
+        <div class="footer">
+            <div class="copyright">
+                <p class="mb-0">Copyright © Designed &amp; Developed by <a href="#" target="_blank">Feriel&Oumaima</a> 2022-2023
+                </p>
+            </div>
+        </div>
+        <!-- End section footer -->
+
+
+    </div>
+
+
+</body>
+
+
+</html>

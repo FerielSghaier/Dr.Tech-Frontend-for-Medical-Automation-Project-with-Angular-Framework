@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <title>Projet</title>
+
+</head>
+
+<body>
+    <div id="main-wrapper" class="show">
+
+
+    
+  <app-headbar></app-headbar>
+  <app-menu></app-menu>
+
+        <!-- start section content -->
+        <div class="content-body">
+            <div class="warper container-fluid">
+                <div class="new-patients main_container">
+                    <div class="row page-titles mx-0">
+                        <div class="col-sm-6 p-md-0">
+                            <div class="welcome-text">
+                                <h4 class="text-primary">Ajouter un Nouveau Docteur</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a routerLink="/tableau">Acceuil</a></li>
+                                <li class="breadcrumb-item active"><a routerLink="/ajouter-docteur">Ajouter Nouveau Docteur</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Informations Personnelles</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="basic-form">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-xl-4">
+                                                    <div class="form-group row widget-3">
+                                                        <div class="col-lg-10">
+                                                            <div class="form-input">
+                                                                <label class="labeltest" for="file-ip-1">
+                                                                    <span> Déposez l'image ici ou cliquez pour télécharger. </span>
+                                                                </label>
+                                                                <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+                                                                <div class="preview">
+                                                                    <img id="file-ip-1-preview" src="#" alt="img">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Nom">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Prénom">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" placeholder="Email">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Numéro de téléphone">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <div class="form-group">
+                                                        <select class="form-control form-select">
+                                                            <option>Choisissez un genre</option>
+                                                            <option>Femme</option>
+                                                            <option>Homme</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Date de naissance">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <select class="form-control form-select">
+                                                            <option>Languages</option>
+                                                            <option>Arabic</option>
+                                                            <option>English</option>
+                                                            <option>French</option>
+                                                            <option>German</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Nationalité">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-4">
+                                                </div>
+                                        
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-4">
+                                                </div>
+                                                <div class="col-xl-8">
+                                                    <div class="form-group">
+                                                        <select class="form-control ">
+                                                            <option>role</option>
+                                                            <option>medecine</option>
+                                                            <option>Chirurgie</option>
+                                                            <option>Radiologie</option>
+                                                            <option>Laboratoire</option>                                                
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-4">
+                                                </div>
+                                                <div class="col-xl-8">
+                                                    <div class="form-group">
+                                                        <select class="form-control ">
+                                                            <option>Spécialité</option>
+                                                            <option>medecine de famille</option>
+                                                            <option>anesthésiologie</option>
+                                                            <option>cardiologie</option>
+                                                            <option>dermatologiet</option>
+                                                            <option>gastro-entérologie</option>
+                                                            <option>génétique médicale</option>
+                                                            <option>gériatrie</option>
+                                                            <option>hématologie</option>
+                                                            <option>immunologie clinique et allergie</option>
+                                                            <option>néphrologie</option>
+                                                            <option>neurologie</option>
+                                                            <option>pédiatrie</option>
+                                                            <option>physiatrie</option>
+                                                            <option>pneumologie</option>
+                                                            <option>rhumatologie</option>
+                                                       
+                                                            
+                                                  
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xl-4">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" placeholder="Addresse" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-8">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" placeholder="Bio:" rows="4"></textarea>
+                                                    </div>
+                                                    <div class="form-group text-right">
+                                                        <button type="submit" class="btn btn-primary float-end" (click)="ajouter()">Ajouter Docteur</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- End section content -->
+
+
+        <!-- start section footer -->
+        <div class="footer">
+            <div class="copyright">
+                <p class="mb-0">Copyright © Designed &amp; Developed by <a href="#" target="_blank">Feriel&Oumaima</a> 2022-2023
+                </p>
+            </div>
+        </div>
+        <!-- End section footer -->
+
+
+    </div>
+
+
+
+</body>
+
+
+</html>

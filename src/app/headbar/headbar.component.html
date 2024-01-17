@@ -1,0 +1,72 @@
+<div class="header">
+    <header class="top-head container-fluid">
+        <div class="nav-control">
+            <div class="hamburger">
+                <span class="line"></span><span class="line"></span><span class="line"></span>
+            </div>
+            <div class="left-header content-header__menu">
+                <ul class="list-unstyled">
+                    <li class="nav-link btn">
+                        <a href="#"><i class="far fa-calendar-check"></i> <span (click)="rdv()"> Prendre un rendez-vous</span></a>
+                    </li>
+                    <li class="nav-link btn">
+                        <a href="#"><i class="far fa-file-alt"></i> <span (click)="ordonnance()"> Ecrire une ordonnance</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="fullscreen notification_dropdown">
+                <div class="full">
+                    <a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()">
+                        <i class="fas fa-expand"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="notification_dropdown">
+                <div class="cart-wrapper">
+                    <div class="cart-icon">
+                        <a class="cart-control" href="#">
+                            <i class="fas fa-bell"></i>
+                            <div class="pulse-css"></div>
+                        </a>
+                    </div>
+                    <div class="cart-dropdown-form dropdown-container">
+                        <div class="form-content">
+                          
+                            <a class="all-notification btn btn-primary" href="#">
+                                See all notifications
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-account-wrapper">
+                <div class="account-wrapper">
+                    <div class="account-control">
+                        <a class="login header-profile" href="#" title="Sign in">
+                            <div class="header-info">
+                                <span>Dr {{nom}}</span>
+                                <small>Admin</small>
+                            </div>
+                            <img src="assets/images/11.jpg" alt="people">
+                        </a>
+                        <div class="account-dropdown-form dropdown-container">
+                            <div class="form-content">
+                                <a  routerLink="/profil">
+                                    <i class="far fa-user"></i>
+                                    <span class="ml-2">Profil</span>
+                                </a>
+                             
+                                <a  routerLink="/login">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                    <span class="ml-2">Déconnexion </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    </div>
